@@ -1,31 +1,24 @@
-import datetime
-import inspect
+import sys
+from src.logger import logging
+
+def error_message_detail(error,error_detail:sys):
+    _,_,exc_tb=error_detail.exc_info()
+    file_name=exc_tb.tb_frame.f_code.co_filename
+    error_message="Error occured in python script name [{0}] line number [{1}] error message[{2}]".format(
+     file_name,exc_tb.tb_lineno,str(error))
+
+    return error_message
+
+    
 
 class CustomException(Exception):
-    def __init__(self, message):
-        now = datetime.datetime.now()
-        formatted_date = now.strftime("%Y-%m-%d")
-        formatted_time = now.strftime("%H:%M:%S")
-        self.message = f"{formatted_date} {formatted_time}: {message}"
-        super().__init__(self.message)
+    def __init__(self,error_message,error_detail:sys):
+        super().__init__(error_message)
+        self.error_message=error_message_detail(error_message,error_detail=error_detail)
+    
+    def __str__(self):
+        return self.error_message
+    
 
-    @classmethod
-    def error_details(cls):
-        frame = inspect.currentframe().f_back
-        script_name = inspect.getframeinfo(frame).filename
-        line_number = frame.f_lineno
-        now = datetime.datetime.now()
-        formatted_date = now.strftime("%Y-%m-%d %H:%M:%S")
-        return f"Error occurred in python script name [{script_name}] line number [{line_number}] error message date & time [{formatted_date}]"
 
-# Example usage
-try:
-    raise CustomException("Something went wrong!")
-except CustomException as e:
-    print(e)
-    print(CustomException.error_details())
-    try:
-        raise CustomException("Another error occurred!")
-    except CustomException as e:
-        print(e)
-        print(CustomException.error_details())
+        
