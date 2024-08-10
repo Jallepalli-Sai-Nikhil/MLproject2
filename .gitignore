@@ -1,0 +1,281 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+*.egg
+*.egg-info/
+dist/
+build/
+*.whl
+*.deb
+*.rpm
+*.tar.gz
+*.log
+
+# Installers
+*.sh
+*.bat
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.cache/
+coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# IPython history
+.history
+.ipython/
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# VSCode
+.vscode/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Spyder
+.spyderproject
+.spyproject
+
+# Jupyter Notebook configuration
+.jupyter/
+
+# SageMath
+*.sage.py
+
+# Environments
+.env
+.env.*
+.venv
+.vscode/
+.venv/
+virtualenv/
+python3-env/
+
+# Flask/Django stuff:
+instance/
+.webassets-cache
+*.sqlite3
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Cython debug symbols
+cython_debug/
+
+# Translations
+*.mo
+*.pot
+
+# Docker
+Dockerfile
+docker-compose.yml
+.docker/
+docker-compose.override.yml
+
+# Ansible
+*.retry
+
+# Logs
+*.log
+*.out
+*.err
+
+# Data Science / Machine Learning specific ignores
+*.csv
+*.hdf5
+*.h5
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.mat
+*.arff
+*.sas7bdat
+*.parquet
+*.feather
+*.orc
+*.avro
+*.dta
+*.sav
+*.tsv
+*.json
+*.xml
+*.gz
+*.zip
+*.tar
+*.7z
+*.bz2
+
+# Output directories for your models
+saved_models/
+trained_models/
+models/
+checkpoints/
+__pycache__/
+logs/
+weights/
+output/
+results/
+
+# Large data files
+*.mp4
+*.mkv
+*.webm
+*.flv
+*.avi
+*.mov
+*.wmv
+*.mpg
+*.mpeg
+
+# Images
+*.png
+*.jpg
+*.jpeg
+*.bmp
+*.gif
+*.tiff
+*.svg
+*.eps
+*.ico
+
+# Video
+*.mp4
+*.avi
+*.mkv
+*.webm
+*.mov
+*.mpg
+*.mpeg
+*.wmv
+
+# Audio
+*.wav
+*.mp3
+*.flac
+*.m4a
+*.ogg
+*.aiff
+
+# TensorFlow / Keras / PyTorch files
+*.ckpt
+*.index
+*.meta
+*.pb
+*.pth
+*.pt
+*.h5
+*.tflite
+*.onnx
+
+# HDF5 binary data format
+*.h5
+*.hdf5
+
+# Matplotlib figures
+*.fig
+
+# Tensorboard log files
+runs/
+
+# LightGBM files
+*.bin
+
+# PyCaret artifacts
+*.pkl
+*.sav
+*.dill
+__pycache__/
+experiments/
+artifacts/
+logs/
+
+# Cache files
+cache/
+*.cache
+*.tmp
+*.temp
+*.bak
+*.swp
+
+# AWS SageMaker
+.ipynb_checkpoints/
+*.sagemaker
+
+# Conda files
+*.conda
+*.env
+conda-meta/
+*.condarc
+*.conda-env
+
+# VirtualEnv directories
+env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# MacOS specific
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Temporary files
+*.tmp
+*.temp
+*.~*
+
+# Notebook info
+.ipynb
+
+# Pycharm
+.idea/
+*.idea/
+
